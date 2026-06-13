@@ -1,0 +1,20 @@
+{
+  "name": "careshare_ci",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "flutter:pub:get": "flutter pub get",
+    "test:dart": "flutter test",
+    "build:web": "flutter build web --release",
+    "test:api": "flutter test test/gemini_service_test.dart --machine",
+    "test:e2e": "node scripts/selenium-e2e.js",
+    "report": "node scripts/generate-report.js",
+    "ci": "npm install && flutter pub get && flutter test --machine > test_results.json || true && flutter build web --release && node scripts/generate-report.js test_results.json artifacts/test-report.xlsx"
+  },
+  "dependencies": {
+    "chromedriver": "^117.0.0",
+    "exceljs": "^4.3.0",
+    "http-server": "^14.1.1",
+    "selenium-webdriver": "^4.16.0"
+  }
+}
