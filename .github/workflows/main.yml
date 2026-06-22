@@ -135,9 +135,9 @@ jobs:
         run: |
           EXEC_DATE=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
           
-          echo "=========================================================" >> $GITHUB_STEP_SUMMARY
+          
           echo "CARESHARE AI TEST EXECUTION SUMMARY" >> $GITHUB_STEP_SUMMARY
-          echo "===================================" >> $GITHUB_STEP_SUMMARY
+         
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "**Project Name:** CareShare AI" >> $GITHUB_STEP_SUMMARY
           echo "**Execution Date:** $EXEC_DATE" >> $GITHUB_STEP_SUMMARY
@@ -173,7 +173,7 @@ jobs:
             echo "" >> $GITHUB_STEP_SUMMARY
           done
           
-          echo "---" >> $GITHUB_STEP_SUMMARY
+          
           echo "### 2. LOAD TESTING SUMMARY" >> $GITHUB_STEP_SUMMARY
           echo "---" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
@@ -239,7 +239,7 @@ jobs:
           echo "* ✓ Load Test Cases Excel" >> $GITHUB_STEP_SUMMARY
           echo "* ✓ Summary Excel" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "> 💡 **Artifact Notification:** All files have been securely compiled and uploaded as standalone downloadable GitHub Actions artifacts." >> $GITHUB_STEP_SUMMARY
+          echo ">  **Artifact Notification:** All files have been securely compiled and uploaded as standalone downloadable GitHub Actions artifacts." >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "---" >> $GITHUB_STEP_SUMMARY
           echo "### 7. OVERALL EXECUTION RESULT" >> $GITHUB_STEP_SUMMARY
@@ -253,8 +253,8 @@ jobs:
           echo "- **Pass Percentage:** 100%" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "#### FINAL STATUS:" >> $GITHUB_STEP_SUMMARY
-          echo "### 🎉 ALL TESTS PASSED SUCCESSFULLY 🎉" >> $GITHUB_STEP_SUMMARY
+          echo "###  ALL TESTS PASSED SUCCESSFULLY " >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "=========================================================" >> $GITHUB_STEP_SUMMARY
+
           echo "END OF EXECUTION SUMMARY" >> $GITHUB_STEP_SUMMARY
-          echo "========================" >> $GITHUB_STEP_SUMMARY
+       
