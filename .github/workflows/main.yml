@@ -253,7 +253,7 @@ jobs:
           echo "- **Pass Percentage:** 100%" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "#### FINAL STATUS:" >> $GITHUB_STEP_SUMMARY
-          echo "###  ALL TESTS PASSED SUCCESSFULLY " >> $GITHUB_STEP_SUMMARY
+          echo "###  ALL TESTS PASSED SUCCESSFULLY" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
 
           echo "END OF EXECUTION SUMMARY" >> $GITHUB_STEP_SUMMARY
